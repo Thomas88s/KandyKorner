@@ -1,0 +1,34 @@
+{
+
+"products": [
+    {
+
+
+    }
+],
+"locations": [
+    {
+        "address": "204 Kandy Kane Way",
+        "squareFootage": 3000,
+        "handicapAccessible": true
+    }
+],
+"employees": [
+    {
+
+    }
+],
+"productTypes": [
+    {
+
+
+    }
+],
+"customers": [
+    {
+
+        
+    }
+]
+
+}
