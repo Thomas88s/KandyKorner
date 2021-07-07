@@ -5,12 +5,12 @@ import { LocationCard } from "./LocationCard"
 import "./Location.css"
 
 export const LocationList = () => {
-  // This state changes when `getAnimals()` is invoked below
+  // This state changes when `getLocations()` is invoked below
   const { locations, getLocations } = useContext(LocationContext)
 
   //useEffect - reach out to the world for something
   useEffect(() => {
-    console.log("LocationList: useEffect - getLocations")
+   
     getLocations()
 
   }, [])
@@ -18,12 +18,13 @@ export const LocationList = () => {
 
   return (
     <div className="locations">
-      {console.log("LocationList: Render", locations)}
+      
       {
         locations.map(location => {
-          return <LocationCard address={location.address} Handicap Accessible={location.handicapAccessible} />
+          return <LocationCard  key={location.address} location= {location} />
         })
       }
     </div>
   )
 }
+// hello
