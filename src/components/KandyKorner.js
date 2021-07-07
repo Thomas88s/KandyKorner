@@ -1,6 +1,6 @@
 import React from "react"
 // import "./Kandy.css"
-import { LocationList } from "./locations/LocationProvider"
+import { LocationProvider } from "./locations/LocationProvider"
 
 export const KandyKorner = () => (
     <>
@@ -11,7 +11,7 @@ export const KandyKorner = () => (
 
         <h2>Locations</h2>
         <article className="locations">
-            <LocationList />
+            <LocationProvider />
         </article>
     </>
 )
