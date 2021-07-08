@@ -12,7 +12,6 @@ export const LocationList = () => {
   useEffect(() => {
    
     getLocations()
-
   }, [])
 
 
@@ -21,10 +20,9 @@ export const LocationList = () => {
       
       {
         locations.map(location => {
-          return <LocationCard  key={location.address} location= {location} />
+          return <LocationCard  key={location.address}  location={location} />
         })
       }
     </div>
   )
 }
-// hello

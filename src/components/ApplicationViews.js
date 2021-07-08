@@ -2,12 +2,12 @@
      import React from "react"
      import { Route } from "react-router-dom"
      import { Home } from "./Home"
-     import { LocationCard } from "./location/LocationCard"
-     import { LocationList } from "./location/LocationList"
-     import { LocationProvider } from "./location/LocationProvider"
-    //  import { LocationCard } from "./location/LocationCard"
-    //  import { LocationCard } from "./location/LocationCard"
-    //  import { LocationCard } from "./location/LocationCard"
+     import { LocationList } from "./locations/LocationList"
+     import { LocationProvider } from "./locations/LocationProvider"
+     import { ProductList } from "./products/ProductList"
+     import { ProductProvider } from "./products/ProductProvider"
+    
+
      
      
      export const ApplicationViews = () => {
@@ -17,12 +17,14 @@
                  <Route exact path="/">
                      <Home />    
                  </Route>
-
-                 <Route path="/products">
-                 </Route>
                  
+                 <ProductProvider>
+                    <Route path="/products">
+                        <ProductList />
+                    </Route>
+                 </ProductProvider>
+
                  <Route path="/locations">
-                     <LocationCard />
                  </Route>
  
                  <LocationProvider>
