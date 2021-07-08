@@ -6,7 +6,7 @@
      import { LocationProvider } from "./locations/LocationProvider"
      import { ProductList } from "./products/ProductList"
      import { ProductProvider } from "./products/ProductProvider"
-    
+     import { TypeProvider } from "./productTypes/TypeProvider"
 
      
      
@@ -19,13 +19,12 @@
                  </Route>
                  
                  <ProductProvider>
-                    <Route path="/products">
-                        <ProductList />
-                    </Route>
+                     <TypeProvider>
+                        <Route path="/products">
+                            <ProductList />
+                        </Route>
+                     </TypeProvider>  
                  </ProductProvider>
-
-                 <Route path="/locations">
-                 </Route>
  
                  <LocationProvider>
                     <Route exact path="/locations">
