@@ -1,7 +1,6 @@
 
     import React, { useContext, useEffect } from "react"
     import { ProductContext } from "./ProductProvider"
-    
     import { ProductCard } from "./ProductCard"
     import "./Product.css"
     
