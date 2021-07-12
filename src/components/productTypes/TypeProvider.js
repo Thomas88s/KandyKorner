@@ -4,28 +4,28 @@
     export const TypeContext = createContext()
     
     export const TypeProvider = (props) =>  {
-        const [productTypes, setTypes] = useState([])
+        const [ types, setTypes] = useState([])
     
         const getTypes = () => {
-            return fetch("http://localhost:8088/locations?")
+            return fetch("http://localhost:8088/productTypes?")
             .then(res => res.json())
             .then(setTypes)
         }
     
-        const addType = locationObj => {
-            return fetch ("http://localhost:8088/locations", {
+        const addType = typeObj => {
+            return fetch ("http://localhost:8088/productTypes", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
                 },
-                body: JSON.stringify(locationObj)
+                body: JSON.stringify(typeObj)
             })
             .then(getTypes)
         }
     
         return (
             <TypeContext.Provider value={{
-                productTypes, getTypes, addType
+                types, getTypes, addType
             }}>
                 {props.children}
             </TypeContext.Provider>

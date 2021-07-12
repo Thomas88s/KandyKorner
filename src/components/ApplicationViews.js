@@ -7,7 +7,7 @@
      import { ProductList } from "./products/ProductList"
      import { ProductProvider } from "./products/ProductProvider"
      import { TypeProvider } from "./productTypes/TypeProvider"
-
+     import { TypeList } from "./productTypes/TypeList"
      
      
      export const ApplicationViews = () => {
@@ -32,8 +32,11 @@
                     </Route>
                  </LocationProvider>
 
-                 <Route path="/productTypes">
-                 </Route>
+                 <TypeProvider>
+                       <Route exact path="/productTypes">
+                           <TypeList />
+                       </Route>
+                 </TypeProvider>
 
                  <Route path="/customers">
                  </Route>

@@ -19,7 +19,7 @@
                     <Link className="navbar__link" to="/employees">Employees</Link>
                 </li>
                 <li className="navbar__item">
-                    <Link className="navbar__link" to="/product Types">Product Types</Link>
+                    <Link className="navbar__link" to="/productTypes">Product Types</Link>
                 </li>
                 <li className="navbar__item">
                     <Link className="navbar__link" to="/customers">Customers</Link>
