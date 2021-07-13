@@ -84,10 +84,109 @@
     }
   ],
   "customers": [
+    {}
+  ],
+  "orders": [
     {
-        "id": 1,
-        "name": "Hannah Hall",
-        "address": "7002 Chestnut Ct"
+      "id": 1,
+      "productId": 1,
+      "customerId": 1
+    },
+    {
+      "customerId": null,
+      "id": 2
+    },
+    {
+      "customerId": null,
+      "id": 3
+    },
+    {
+      "customerId": null,
+      "id": 4
+    },
+    {
+      "customerId": null,
+      "id": 5
+    },
+    {
+      "customerId": null,
+      "id": 6
+    },
+    {
+      "customerId": null,
+      "id": 7
+    },
+    {
+      "customerId": null,
+      "id": 8
+    },
+    {
+      "customerId": null,
+      "id": 9
+    },
+    {
+      "customerId": null,
+      "id": 10
+    },
+    {
+      "customerId": null,
+      "id": 11
+    },
+    {
+      "customerId": null,
+      "id": 12
+    },
+    {
+      "customerId": null,
+      "id": 13
+    },
+    {
+      "customerId": null,
+      "id": 14
+    },
+    {
+      "customerId": null,
+      "id": 15
+    },
+    {
+      "customerId": null,
+      "id": 16
+    },
+    {
+      "customerId": null,
+      "id": 17
+    },
+    {
+      "customerId": null,
+      "id": 18
+    },
+    {
+      "customerId": null,
+      "id": 19
+    },
+    {
+      "customerId": null,
+      "id": 20
+    },
+    {
+      "customerId": null,
+      "id": 21
+    },
+    {
+      "customerId": null,
+      "id": 22
+    },
+    {
+      "customerId": null,
+      "id": 23
+    },
+    {
+      "customerId": null,
+      "id": 24
+    },
+    {
+      "customerId": null,
+      "id": 25
     }
   ]
 }

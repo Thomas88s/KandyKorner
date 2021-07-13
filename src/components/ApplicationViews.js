@@ -6,11 +6,13 @@
      import { LocationProvider } from "./locations/LocationProvider"
      import { ProductList } from "./products/ProductList"
      import { ProductProvider } from "./products/ProductProvider"
+     import { CandyForm } from "./products/ProductCard"
      import { TypeProvider } from "./productTypes/TypeProvider"
      import { TypeList } from "./productTypes/TypeList"
      import { EmployeeProvider } from "./employees/EmployeeProvider"
      import { EmployeeList } from "./employees/EmployeeList"
      import { EmployeeForm } from "./employees/EmployeeForm"
+     import { OrderProvider } from "./orders/OrderProvider"
      
      
      export const ApplicationViews = () => {
@@ -21,14 +23,19 @@
                      <Home />    
                  </Route>
                  
+                <OrderProvider>
                  <ProductProvider>
                      <TypeProvider>
+                      <Route exact path="/orders/create">
+                        <CandyForm />    
+                      </Route>
                         <Route path="/products">
                             <ProductList />
                         </Route>
                      </TypeProvider>  
                  </ProductProvider>
  
+                    </OrderProvider> 
                  <LocationProvider>
                     <Route exact path="/locations">
                       <LocationList />
