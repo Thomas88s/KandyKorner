@@ -1,53 +1,71 @@
 {
-
-"products": [
+  "products": [
     {
-        "id": 1,
-        "productTypeId": 1,
-        "name": "Jolly Rancher",
-        "price": 0.25
-
+      "id": 1,
+      "productTypeId": 1,
+      "name": "Jolly Rancher",
+      "price": 0.25
     },
     {
-        "id": 2,
-        "productTypeId": 2,
-        "name": "Big Red",
-        "price": 0.10
-
+      "id": 2,
+      "productTypeId": 2,
+      "name": "Big Red",
+      "price": 0.1
     },
     {
-        "id": 3,
-        "productTypeId": 3,
-        "name": "Toblerone",
-        "price": 0.50
-
+      "id": 3,
+      "productTypeId": 3,
+      "name": "Toblerone",
+      "price": 0.5
     },
     {
-        "id": 4,
-        "productTypeId": 4,
-        "name": "Cream Soda",
-        "price": 0.45
-
+      "id": 4,
+      "productTypeId": 4,
+      "name": "Cream Soda",
+      "price": 0.45
     }
-],
-"locations": [
+  ],
+  "locations": [
     {
-        "address": "204 Kandy Kane Way",
-        "squareFootage": 3000,
-        "handicapAccessible": true
+      "id": 1,
+      "address": "204 Kandy Kane Way",
+      "squareFootage": 3000,
+      "handicapAccessible": true
     },
     {
-        "address": "206 Kandy Kane Way",
-        "squareFootage": 3000,
-        "handicapAccessible": true
+      "id": 2,
+      "address": "206 Kandy Kane Way",
+      "squareFootage": 1700,
+      "handicapAccessible": true
     }
-],
-"employees": [
+  ],
+  "employees": [
     {
-
+      "id": 1,
+      "name": "Janis",
+      "locationId": 1,
+      "manager": false,
+      "fullTime": false,
+      "hourlyRate": 3.5
+    },
+    {
+      "name": "Thomas Witherow",
+      "locationId": 2,
+      "manager": "1",
+      "fullTime": "1",
+      "hourlyRate": "1000000",
+      "id": 2
+    },
+    {
+      "name": "Annora",
+      "locationId": 2,
+      "manager": "1",
+      "fullTime": "1",
+      "hourlyRate": "100.33",
+      "id": 3
     }
-],
-"productTypes": [
+  ],
+  "productTypes": [
     {
       "id": 1,
       "type": "Hard Candy"
@@ -64,12 +82,8 @@
       "id": 4,
       "type": "Sodas"
     }
-],
-"customers": [
-    {
-
-        
-    }
-]
-
+  ],
+  "customers": [
+    {}
+  ]
 }
